@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="PrezentacijskiSlojWPF.prozori.FormaZaPrikazPoslova"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PrezentacijskiSlojWPF.prozori"
+        mc:Ignorable="d"
+        Height="450" Width="800" Loaded="UserControl_Loaded">
+    <DockPanel>
+        <ScrollViewer HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Hidden" DockPanel.Dock="Top" Height="400">
+            <StackPanel Orientation="Vertical">
+                <StackPanel x:Name="filtarStackPanel" Orientation="Horizontal" Height="50" VerticalAlignment="Top">
+                    <ComboBox x:Name="CmbKategorije" Height="30" Width="150" Padding="20,0,20,0" Margin="20,0,20,0"></ComboBox>
+                    <ComboBox x:Name="CmbKorisnik" Height="30" Width="150" Padding="20,0,20,0" Margin="20,0,20,0"/>
+                    <ComboBox x:Name="CmbStanje" Height="30" Width="150" Padding="20,0,20,0" Margin="20,0,20,0"></ComboBox>
+                    <Button x:Name="BtnFiltriraj" Height="30" Width="75" Margin="20,0,20,0" Click="BtnFiltriraj_Click" Content="Filtriraj"></Button>
+                    <Button x:Name="BtnResetiraj" Height="30" Width="75" Margin="20,0,20,0" Content="Resetiraj" Click="BtnResetiraj_Click"></Button>
+                </StackPanel>
+                <StackPanel x:Name="myStackPanel" Orientation="Horizontal" CanHorizontallyScroll="True">
+                </StackPanel>
+            </StackPanel>
+           
+        </ScrollViewer>
+        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" Margin="10" x:Name="spUpravljanjePoslovima">
+            <ComboBox Margin="10,0" Width="50" x:Name="cmbSati" ></ComboBox>
+            <ComboBox Margin="10,0" Width="50" x:Name="cmbMinute" ></ComboBox>
+            <Button Margin="10,0" Content="Postavi obavijest" Width="120" x:Name="btnObavijest" Click="btnObavijest_Click"></Button>
+            <Button x:Name="btnRijesiPosao" Click="btnRijesiPosao_Click" Content="Riješi posao" Margin="150,0,0,0" Width="100"/>
+            <Button x:Name="btnDodajPosao" Click="btnDodajPosao_Click" Content="Dodaj posao" Margin="10,0,0,0" Width="100"/>
+            <Button x:Name="btnUrediBrisi" Click="btnUrediBrisi_Click" Content="Uredi/Obriši posao" Margin="10,0,0,0" Width="120"/>
+        </StackPanel>
+    </DockPanel>
+
+</UserControl>

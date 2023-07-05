@@ -1,0 +1,24 @@
+﻿<Window x:Class="PrezentacijskiSlojWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PrezentacijskiSlojWPF"
+        mc:Ignorable="d"
+        Title="Chorium" Height="563" Width="1000" Loaded="Window_Loaded" KeyDown="Window_KeyDown">
+    <DockPanel>
+        <StackPanel x:Name="navigacija" DockPanel.Dock="Left" Width="150" Background="DarkGray">
+            <Button x:Name="btnPrijava" Content="Prijava" Height="25" BorderThickness="0" Click="btnPrijava_click"></Button>
+            <Button x:Name="btnRegistracija" Content="Registracija" Height="25" BorderThickness="0" Click="btnRegistriraj"></Button>
+            <Button x:Name="btnKucanskiPoslovi" Content="Kućanski poslovi" Height="25" BorderThickness="0" Click="btnKucanskiPoslovi_click"></Button>
+            <Button x:Name="btnKalendar" Content="Obiteljski kalendar" Height="25" BorderThickness="0" Click="btnKalendar_Click"></Button>
+            <Button x:Name="btnIzvjestaj" Content="Mjesečni izvještaj" Height="25" BorderThickness="0" Click="btnIzvjestaj_Click"></Button>
+            <Button x:Name="btnTestDodavanjaPosla" Content="test dodavanja" Height="25" BorderThickness="0" Click="btnTestDodavanjaPosla_Click" IsEnabled="False" Visibility="Hidden"></Button>
+            <Button x:Name="btnTestUredivanjePosla" Content="test uredivanje" Height="25" BorderThickness="0" Click="btnTestUredivanjePosla_Click" IsEnabled="False" Visibility="Hidden"></Button>
+            <TextBlock HorizontalAlignment="Center" Text="F1 za korisničku dokumentaciju" TextWrapping="Wrap"></TextBlock>
+        </StackPanel>
+        <ContentControl x:Name="sadrzaj" DockPanel.Dock="Right">
+            
+        </ContentControl>
+    </DockPanel>
+</Window>

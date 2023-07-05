@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="PrezentacijskiSlojWPF.prozori.FormaZaPrijavu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PrezentacijskiSlojWPF.prozori"
+        mc:Ignorable="d"
+        Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="TxtKorime" HorizontalAlignment="Center" Margin="0,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="264" Height="30"/>
+        <PasswordBox x:Name="TxtLozinka" HorizontalAlignment="Center" VerticalAlignment="Top" Width="264" Height="30" Margin="0,190,0,0"/>
+        <Label Content="Lozinka:" HorizontalAlignment="Left" Margin="177,183,0,0" VerticalAlignment="Top" Width="86" FontWeight="Bold" FontSize="20"/>
+        <Label Content="Korisničko ime:" HorizontalAlignment="Left" Margin="109,113,0,0" VerticalAlignment="Top" Width="154" FontWeight="Bold" FontSize="20"/>
+        <Button x:Name="BtnPrijava" Content="Prijavi se" HorizontalAlignment="Left" Margin="267,260,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.269,0.67" Click="BtnPrijava_Click" Width="130" Height="30"/>
+        <Button x:Name="BtnFaceLogin" Content="FaceLogin" HorizontalAlignment="Left" Margin="402,260,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.269,0.67" Width="130" Height="30" Click="BtnFaceLogin_Click"/>
+
+    </Grid>
+</UserControl>

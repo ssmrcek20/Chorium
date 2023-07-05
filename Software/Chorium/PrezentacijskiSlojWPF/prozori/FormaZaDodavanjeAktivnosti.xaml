@@ -1,0 +1,46 @@
+﻿<UserControl x:Class="PrezentacijskiSlojWPF.prozori.FormaZaDodavanjeAktivnosti"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PrezentacijskiSlojWPF.prozori"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800" Loaded="UserControl_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" VerticalAlignment="Top" HorizontalContentAlignment="Center" Height="40" Content="Dodajte novu aktivnost" FontWeight="Bold" FontSize="20"></Label>
+        <Label Grid.Column="0" Grid.Row="1" Content="Naziv" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Margin="0,0,50,0" FontWeight="Bold" FontSize="18"/>
+        <Label Grid.Column="0" Grid.Row="2" Content="Datum početka" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Margin="0,0,50,0" FontWeight="Bold" FontSize="18"/>
+        <Label Grid.Column="0" Grid.Row="3" Content="Datum završetka" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Margin="0,0,50,0" FontWeight="Bold" FontSize="18"/>
+        <Label Grid.Column="0" Grid.Row="4" Content="Član kućanstva" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Margin="0,0,50,0" FontWeight="Bold" FontSize="18"/>
+        <TextBox x:Name="txtNaziv" Grid.Column="1" Grid.Row="1" Height="30" Margin="30,0,30,0"></TextBox>
+        <DatePicker x:Name="dtpDatumPocetka" Grid.Column="1" Grid.Row="2" Height="30" Margin="30,0,30,0" HorizontalAlignment="Left" Width="150"></DatePicker>
+        <Label Grid.Column="1" Grid.Row="2" Width="50" Height="20" Margin="20,0,0,0" VerticalAlignment="Top" Content="Sati" HorizontalContentAlignment="Center" FontSize="9"></Label>
+        <Label Grid.Column="1" Grid.Row="2" Width="50" Height="20" Margin="130,0,0,0" VerticalAlignment="Top" Content="Min" HorizontalContentAlignment="Center" FontSize="9"></Label>
+        <Label Grid.Column="1" Grid.Row="2" Width="50" Height="20" Margin="240,0,0,0" VerticalAlignment="Top" Content="Sec" HorizontalContentAlignment="Center" FontSize="9"></Label>
+        <TextBox x:Name="txtPocetakH" Grid.Column="1" Grid.Row="2" Width="50" Height="30" Margin="20,0,0,0"></TextBox>
+        <TextBox x:Name="txtPocetakM" Grid.Column="1" Grid.Row="2" Width="50" Height="30" Margin="130,0,0,0"></TextBox>
+        <TextBox x:Name="txtPocetakS" Grid.Column="1" Grid.Row="2" Width="50" Height="30" Margin="240,0,0,0"></TextBox>
+        <DatePicker x:Name="dtpDatumZavrsetka" Grid.Column="1" Grid.Row="3" Height="30" Margin="30,0,30,0" HorizontalAlignment="Left" Width="150"></DatePicker>
+        <Label Grid.Column="1" Grid.Row="3" Width="50" Height="20" Margin="20,0,0,0" VerticalAlignment="Top" Content="Sati" HorizontalContentAlignment="Center" FontSize="9"></Label>
+        <Label Grid.Column="1" Grid.Row="3" Width="50" Height="20" Margin="130,0,0,0" VerticalAlignment="Top" Content="Min" HorizontalContentAlignment="Center" FontSize="9"></Label>
+        <Label Grid.Column="1" Grid.Row="3" Width="50" Height="20" Margin="240,0,0,0" VerticalAlignment="Top" Content="Sec" HorizontalContentAlignment="Center" FontSize="9"></Label>
+        <TextBox x:Name="txtKrajH" Grid.Column="1" Grid.Row="3" Width="50" Height="30" Margin="20,0,0,0"></TextBox>
+        <TextBox x:Name="txtKrajM" Grid.Column="1" Grid.Row="3" Width="50" Height="30" Margin="130,0,0,0"></TextBox>
+        <TextBox x:Name="txtKrajS" Grid.Column="1" Grid.Row="3" Width="50" Height="30" Margin="240,0,0,0"></TextBox>
+        <ComboBox x:Name="cmbClanKucanstva" Grid.Column="1" Grid.Row="4" Height="30" Margin="30,0,30,0"></ComboBox>
+        <Button x:Name="btnDodajAktivnost" Click="btnDodajAktivnost_Click" Content="Dodaj aktivnost" Grid.Column="1" Grid.Row="5" Height="30" Width="130" HorizontalAlignment="Left" Margin="30,0,0,0"></Button>
+        <Button x:Name="btnOdustani" Click="btnOdustani_Click" Content="Odustani" Grid.Column="0" Grid.Row="5" Height="30" Width="130" HorizontalAlignment="Right" Margin="0,0,55,0"></Button>
+    </Grid>
+</UserControl>
